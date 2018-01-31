@@ -16,6 +16,9 @@
 			height: 100%;
 			width: 100%;
 		}
+		.fontwhite{
+			color: white;
+		}
 	</style>
 
 	<body>
@@ -24,9 +27,11 @@
 			<!-- 菜单容器 -->
 			<aside class="mui-off-canvas-left" id="offCanvasSide">
 				<div class="mui-scroll-wrapper">
-					<div class="mui-scroll">
+					<div class="mui-scroll fontwhite">
 						<!-- 菜单具体展示内容 -->
-							<ul class="mui-table-view">
+						这里做一个正在路上的货物的列表方便查询,点击进入详情页面
+						<p>列表加a标签</p>
+							<!--<ul class="mui-table-view">
 							    <li class="mui-table-view-cell mui-media">
 							        <a href="javascript:;">
 							            <img class="mui-media-object mui-pull-left" src="http://placehold.it/40x30">
@@ -54,7 +59,7 @@
 							            </div>
 							        </a>
 							    </li>
-							</ul>
+							</ul>-->
 					</div>
 				</div>
 			</aside>
@@ -74,25 +79,35 @@
 						<span class="mui-icon mui-icon-more"></span>
 						<span class="mui-tab-label">查看所有</span>
 					</a>
-					<!--<a class="mui-tab-item" href="#tabbar-with-contact">
+					<a class="mui-tab-item" href="#tabbar-with-ago">
 						<span class="mui-icon mui-icon-contact"></span>
-						<span class="mui-tab-label">通讯录</span>
+						<span class="mui-tab-label">查看所有</span>
 					</a>
+
 					<a class="mui-tab-item" href="#tabbar-with-map">
 						<span class="mui-icon mui-icon-gear"></span>
 						<span class="mui-tab-label">设置</span>
-					</a>-->
+					</a>
 				</nav>
 				<div class="mui-content my-content">
 
 					<!-- 主界面具体展示内容 -->
 
 					<div id="tabbar" class="mui-control-content mui-active">
-
+								这里是本地存储与数据库的差异，点到详情页面进行，小数据的本地存储
 					</div>
 					<div id="tabbar-with-chat" class="mui-control-content">
 						
-
+							这里为所有的正在路上的货物 两个显示一次，下拉刷新
+					</div>
+					<div id="tabbar-with-ago" class="mui-control-content">
+						
+							已经完成的货物项目（可以进行资金运算，销售经理的内容包括下属的一切，销售经理为管理员，其他员工为员工）
+							并可以进行和目标的差距显示
+					</div>
+						<div id="tabbar-with-map" class="mui-control-content">
+						
+							进行登入（区分货物明确分工）
 					</div>
 
 				</div>
