@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>laiwaicang</title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+	</head>
+	<style>
+		.my-content {
+			height: 100%;
+			width: 100%;
+		}
+	</style>
+
+	<body>
+		<!-- 主界面移动、菜单不动 -->
+		<div class="mui-off-canvas-wrap mui-draggable">
+			<!-- 菜单容器 -->
+			<aside class="mui-off-canvas-left" id="offCanvasSide">
+				<div class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<!-- 菜单具体展示内容 -->
+							<ul class="mui-table-view">
+							    <li class="mui-table-view-cell mui-media">
+							        <a href="javascript:;">
+							            <img class="mui-media-object mui-pull-left" src="http://placehold.it/40x30">
+							            <div class="mui-media-body">
+							                幸福
+							                <p class="mui-ellipsis">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+							            </div>
+							        </a>
+							    </li>
+							    <li class="mui-table-view-cell mui-media">
+							        <a href="javascript:;">
+							            <img class="mui-media-object mui-pull-left" src="http://placehold.it/40x30">
+							            <div class="mui-media-body">
+							                木屋
+							                <p class="mui-ellipsis">想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
+							            </div>
+							        </a>
+							    </li>
+							    <li class="mui-table-view-cell mui-media">
+							        <a href="javascript:;">
+							            <img class="mui-media-object mui-pull-left" src="http://placehold.it/40x30">
+							            <div class="mui-media-body">
+							                CBD
+							                <p class="mui-ellipsis">烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+							            </div>
+							        </a>
+							    </li>
+							</ul>
+					</div>
+				</div>
+			</aside>
+			<!-- 主页面容器 -->
+			<div class="mui-inner-wrap">
+				<!-- 主页面标题 -->
+				<header class="mui-bar mui-bar-nav">
+					<a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#offCanvasSide"></a>
+					<h1 class="mui-title">标题</h1>
+				</header>
+				<nav class="mui-bar mui-bar-tab">
+					<a class="mui-tab-item mui-active" href="#tabbar">
+						<span class="mui-icon mui-icon-spinner mui-spin iconsize"></span>
+						<span class="mui-tab-label">最新消息</span>
+					</a>
+					<a class="mui-tab-item" href="#tabbar-with-chat">
+						<span class="mui-icon mui-icon-more"></span>
+						<span class="mui-tab-label">查看所有</span>
+					</a>
+					<!--<a class="mui-tab-item" href="#tabbar-with-contact">
+						<span class="mui-icon mui-icon-contact"></span>
+						<span class="mui-tab-label">通讯录</span>
+					</a>
+					<a class="mui-tab-item" href="#tabbar-with-map">
+						<span class="mui-icon mui-icon-gear"></span>
+						<span class="mui-tab-label">设置</span>
+					</a>-->
+				</nav>
+				<div class="mui-content my-content">
+
+					<!-- 主界面具体展示内容 -->
+
+					<div id="tabbar" class="mui-control-content mui-active">
+
+					</div>
+					<div id="tabbar-with-chat" class="mui-control-content">
+						
+
+					</div>
+
+				</div>
+				<div class="mui-off-canvas-backdrop"></div>
+			</div>
+		</div>
+	</body>
+
+</html>
